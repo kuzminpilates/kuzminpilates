@@ -1,3 +1,6 @@
+# Create an index.html file with the specified redirect HTML content
+
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +9,14 @@
     <title>Redirecting...</title>
   </head>
   <body>
-    <p>Redirecting to <a href="https://n1348393.alteg.io">n1348393.alteg.io</a>...</p>
+    <p>Redirecting to <a href="https://kuzmin.pilates.com">kuzmin.pilates.com</a>...</p>
   </body>
 </html>
+"""
+
+file_path = "/mnt/data/index.html"
+
+with open(file_path, "w") as file:
+    file.write(html_content)
+
+file_path
